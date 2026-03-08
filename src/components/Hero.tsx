@@ -12,17 +12,17 @@ export function Hero() {
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 pb-16">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300 text-sm mb-8">
           <Sparkles className="h-4 w-4" />
-          Powered by AI
+          AI-Native from Day One
         </motion.div>
 
         <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-          <span className="bg-gradient-to-r from-blue-400 via-blue-300 to-violet-400 bg-clip-text text-transparent">The Future of</span>
+          <span className="text-white">Replace Your</span>
           <br />
-          <span className="text-white">Mortgage Lending</span>
+          <span className="bg-gradient-to-r from-blue-400 via-blue-300 to-violet-400 bg-clip-text text-transparent">Legacy LOS</span>
         </motion.h1>
 
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-          AI-powered loan origination that automates underwriting, eliminates bottlenecks, and closes loans faster than ever.
+          Mortgage lenders are stuck on Encompass and BytePro &mdash; platforms that are slow, expensive, and architecturally incapable of real AI. Adamas LOS is the ground-up replacement with AI at the core.
         </motion.p>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -44,7 +44,7 @@ export function Hero() {
                   <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
                   <div className="w-3 h-3 rounded-full bg-green-500/60" />
                 </div>
-                <div className="flex-1 text-center text-xs text-slate-500">Adamas LOS — Pipeline Dashboard</div>
+                <div className="flex-1 text-center text-xs text-slate-500">Adamas LOS &mdash; Pipeline Dashboard</div>
               </div>
               <div className="p-6 space-y-4">
                 <div className="grid grid-cols-4 gap-4">

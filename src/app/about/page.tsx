@@ -6,10 +6,10 @@ import { FadeIn, StaggerContainer, StaggerItem } from '@/components/FadeIn'
 import { ShieldCheck, Zap, Users, Target } from 'lucide-react'
 
 const values = [
-  { icon: ShieldCheck, title: 'Security First', description: 'Every feature is built with enterprise-grade security, encryption, and compliance from day one.' },
-  { icon: Zap, title: 'Speed Without Shortcuts', description: 'We automate the tedious without sacrificing accuracy. Every AI decision is explainable and auditable.' },
-  { icon: Users, title: 'Lender-Centric Design', description: 'Built by people who understand mortgage lending. Every feature solves a real operational pain point.' },
-  { icon: Target, title: 'Relentless Accuracy', description: '99%+ extraction accuracy. Zero tolerance for data errors. Continuous model improvement.' },
+  { icon: ShieldCheck, title: 'Security First', description: 'AES-256-GCM encryption, per-tenant isolation, PII masking, and audit logging built into every feature from day one.' },
+  { icon: Zap, title: 'AI at the Core', description: 'Every data model and workflow was designed assuming AI would read, write, and reason about the data. AI is the architecture, not a bolt-on.' },
+  { icon: Users, title: 'Lender-Centric', description: 'Built alongside a real mortgage lender. Every feature solves an actual operational pain point observed in daily lending workflows.' },
+  { icon: Target, title: 'Relentless Execution', description: '166,000 lines of production code, 30+ backend modules, and 12,700 automated tests. Built by one engineer using AI as a force multiplier.' },
 ]
 
 const team = [
@@ -19,17 +19,29 @@ const team = [
 export default function AboutPage() {
   return (
     <>
-      <PageHero title="About Adamas LOS" subtitle="Building the next generation of mortgage technology." breadcrumb={{ label: 'About', href: '/about' }} />
+      <PageHero title="About Adamas LOS" subtitle="Building the modern replacement for legacy mortgage technology." breadcrumb={{ label: 'About', href: '/about' }} />
 
       <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Our Mission</h2>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              Mortgage lending hasn&apos;t changed in decades. Loan officers still spend hours on manual data entry,
-              document review, and compliance checks. We&apos;re building the AI-powered platform that eliminates
-              these bottlenecks — so lenders can focus on what matters: helping people get homes.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 text-center">Why This Exists</h2>
+            <div className="space-y-4 text-lg text-slate-600 leading-relaxed">
+              <p>
+                I started building Adamas LOS because I saw the problem firsthand. Working alongside a mortgage lender who was paying for
+                both Encompass and BytePro &mdash; because neither did what they needed &mdash; I watched employees waste hours on manual
+                data entry, document review, and compliance checks on platforms that look and operate like relics from the 1990s.
+              </p>
+              <p>
+                Both Encompass and BytePro are now owned by ICE Mortgage Technology, which controls an estimated 40-50% of the LOS market.
+                With near-monopoly control, there&apos;s no incentive to innovate. BytePro uses a single &ldquo;God entity&rdquo; data model,
+                and Encompass runs on 20-year-old architecture. Meaningful AI integration isn&apos;t possible without a ground-up rebuild.
+              </p>
+              <p>
+                So that&apos;s what I built. Adamas LOS is designed from scratch with AI at the core &mdash; not bolted on as an afterthought.
+                The same AI leverage that built this platform is what allows it to automate mortgage processing for lenders. Document-heavy,
+                rule-heavy, compliance-heavy workflows are exactly where AI delivers the most value, and legacy platforms simply can&apos;t support it.
+              </p>
+            </div>
           </FadeIn>
         </div>
       </section>
@@ -37,7 +49,7 @@ export default function AboutPage() {
       <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Values</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Principles</h2>
           </FadeIn>
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((v) => (

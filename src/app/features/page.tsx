@@ -6,27 +6,27 @@ import { FadeIn, StaggerContainer, StaggerItem } from '@/components/FadeIn'
 import { FileSearch, Brain, ShieldCheck, Bot, LayoutGrid, Users, Lock, Globe, BarChart3, FileText, Workflow, Zap } from 'lucide-react'
 
 const aiFeatures = [
-  { icon: FileSearch, title: 'Intelligent Document Processing', description: 'Auto-classify and extract data from 50+ document types. OCR, ML classification, and structured extraction in seconds.' },
-  { icon: Brain, title: 'Automated Underwriting', description: 'ML-powered risk models that analyze credit, income, assets, and property data to deliver consistent underwriting decisions.' },
-  { icon: ShieldCheck, title: 'Smart Compliance', description: 'Real-time monitoring for TRID, HMDA, fair lending, and state-specific rules. Automatic adverse action generation.' },
-  { icon: Bot, title: 'AI Copilot', description: 'Context-aware AI assistant that helps loan officers with document review, condition clearing, and borrower communication.' },
+  { icon: FileSearch, title: 'AI Document Engine', description: 'Auto-classify and extract data from 50+ document types including pay stubs, tax returns, and bank statements. OCR, ML classification, and structured extraction that populates loan fields directly &mdash; eliminating the #1 time sink in mortgage processing.' },
+  { icon: Brain, title: 'Automated Underwriting & Processing', description: 'AI-powered automation of underwriting decisions and loan condition processing. Trainable on lender-specific programs and guidelines for consistent, auditable decisions.' },
+  { icon: ShieldCheck, title: 'Full Compliance Automation', description: 'Built-in TRID deadline tracking, HMDA validation, adverse action notice generation, and state-specific rule enforcement. Compliance is woven into every workflow, not bolted on after the fact.' },
+  { icon: Bot, title: 'AI Copilot', description: 'Context-aware assistant available 24/7 that flags missing conditions, answers guideline questions, creates workflows, and suggests next steps based on the loan&apos;s current state. Improves efficiency and reduces costs for every team member.' },
 ]
 
 const platformFeatures = [
-  { icon: LayoutGrid, title: 'Pipeline Management', description: 'Real-time loan pipeline with advanced filtering, custom views, and live updates.' },
-  { icon: Users, title: 'Multi-Tenant Architecture', description: 'Schema-per-tenant isolation with role-based access control and per-tenant encryption.' },
-  { icon: Lock, title: 'Enterprise Security', description: 'SOC 2 compliant. AES-256-GCM encryption, audit logging, and PII masking throughout.' },
-  { icon: Globe, title: 'Broker & Borrower Portals', description: 'White-labeled portals for brokers and borrowers with real-time status and document upload.' },
-  { icon: BarChart3, title: 'Analytics & Reporting', description: 'Production reports, pipeline analytics, commission tracking, and custom report builder.' },
-  { icon: FileText, title: 'Document Management', description: 'Full lifecycle management with version control, e-signatures, and automated conditions.' },
-  { icon: Workflow, title: 'Workflow Engine', description: 'Visual workflow builder for loan processes, approvals, and automated task assignment.' },
-  { icon: Zap, title: 'Integrations', description: 'Credit bureaus, AUS (DU/LP), pricing engines, appraisal, flood, MI, and more.' },
+  { icon: LayoutGrid, title: 'Pipeline Management', description: 'Real-time loan pipeline with advanced filtering, custom views, and live updates via server-sent events.' },
+  { icon: Users, title: 'Multi-Tenant Architecture', description: 'Schema-per-tenant isolation with role-based access control, row-level security, and per-tenant AES-256-GCM encryption.' },
+  { icon: Lock, title: 'Enterprise Security', description: 'PII encryption at rest, comprehensive audit logging, PII masking in logs, and 65 granular permission keys.' },
+  { icon: Globe, title: 'Broker & Borrower Portals', description: 'White-labeled portals for brokers to submit and manage loans and for borrowers to apply, upload documents, and track status.' },
+  { icon: BarChart3, title: 'Analytics & Reporting', description: 'Production reports, pipeline analytics, commission tracking, and a custom report builder for operational insight.' },
+  { icon: FileText, title: 'Document Management', description: 'Full lifecycle management with version control, automated condition tracking, and presigned S3 downloads.' },
+  { icon: Workflow, title: 'No-Code Builder', description: 'Drag-and-drop page builder, custom fields, workflow automation, and a component marketplace. Adapt the system without developer help.' },
+  { icon: Zap, title: 'Integrations', description: 'Credit bureaus, AUS (DU/LP), pricing engines, appraisal, flood, MI, VOE/VOI, tax transcripts, and fraud detection.' },
 ]
 
 export default function FeaturesPage() {
   return (
     <>
-      <PageHero title="Platform Features" subtitle="Everything you need to originate, process, and close loans — powered by AI." breadcrumb={{ label: 'Features', href: '/features' }} />
+      <PageHero title="Platform Features" subtitle="The entire loan lifecycle from application to closing &mdash; powered by AI that was designed in, not bolted on." breadcrumb={{ label: 'Features', href: '/features' }} />
 
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,7 +54,7 @@ export default function FeaturesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Complete Platform</h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">Every tool a modern lender needs, in one integrated platform.</p>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">Every tool a modern lender needs, in one integrated platform. No more toggling between systems.</p>
           </FadeIn>
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {platformFeatures.map((f) => (

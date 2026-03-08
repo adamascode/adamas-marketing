@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Adamas LOS — AI-Powered Mortgage Loan Origination',
-  description: 'AI-powered loan origination that automates underwriting, eliminates bottlenecks, and closes loans faster than ever.',
+  description: 'Adamas LOS is a modern, AI-native Loan Origination System that replaces legacy platforms like Encompass and BytePro with AI-powered document processing, compliance automation, and an intelligent copilot.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

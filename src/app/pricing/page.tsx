@@ -9,19 +9,21 @@ import Link from 'next/link'
 const tiers = [
   {
     name: 'Starter',
-    price: '$2,500',
-    period: '/month',
+    price: '$25',
+    period: '/user/month',
+    transaction: '$75/loan originated',
     description: 'For small lenders getting started with modern LOS.',
-    features: ['Up to 50 loans/month', 'AI document processing', 'Basic pipeline management', 'Borrower portal', 'Email support', '1 admin user'],
+    features: ['AI document processing', 'Pipeline management', 'Borrower portal', 'Basic compliance engine', 'Email support'],
     cta: 'Get Started',
     featured: false,
   },
   {
     name: 'Professional',
-    price: '$7,500',
-    period: '/month',
+    price: '$50',
+    period: '/user/month',
+    transaction: '$150/loan originated',
     description: 'For growing lenders who need full automation.',
-    features: ['Up to 300 loans/month', 'Everything in Starter', 'Automated underwriting', 'Broker portal', 'Compliance engine', 'Custom workflows', 'API access', 'Priority support', 'Up to 25 users'],
+    features: ['Everything in Starter', 'AI Copilot assistant', 'Automated underwriting', 'Broker portal', 'Full compliance suite (TRID/HMDA)', 'No-code workflow builder', 'Custom fields & page builder', 'API access', 'Priority support'],
     cta: 'Request Demo',
     featured: true,
   },
@@ -29,8 +31,9 @@ const tiers = [
     name: 'Enterprise',
     price: 'Custom',
     period: '',
+    transaction: 'Volume pricing',
     description: 'For large lenders and banks with custom needs.',
-    features: ['Unlimited loans', 'Everything in Professional', 'AI Copilot', 'Custom integrations', 'Dedicated success manager', 'SLA guarantees', 'On-premise option', 'Unlimited users'],
+    features: ['Everything in Professional', 'Custom integrations', 'Dedicated success manager', 'SLA guarantees', 'Secondary market delivery', 'Advanced analytics & reporting', 'Unlimited users'],
     cta: 'Contact Sales',
     featured: false,
   },
@@ -39,10 +42,14 @@ const tiers = [
 export default function PricingPage() {
   return (
     <>
-      <PageHero title="Simple, Transparent Pricing" subtitle="Choose the plan that fits your lending operation. All plans include a 30-day free trial." breadcrumb={{ label: 'Pricing', href: '/pricing' }} />
+      <PageHero title="Pricing That Aligns With Your Production" subtitle="Low base fee plus a per-loan transaction fee. You grow, we grow." breadcrumb={{ label: 'Pricing', href: '/pricing' }} />
 
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <FadeIn className="text-center mb-12">
+            <p className="text-slate-600 max-w-2xl mx-auto">Mortgage lenders think in loans, not seats. Our pricing keeps the base low to ease adoption and scales with your volume. No $100K+ deployments. No 6-month implementations.</p>
+          </FadeIn>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {tiers.map((tier) => (
               <FadeIn key={tier.name}>
@@ -53,10 +60,11 @@ export default function PricingPage() {
                     </div>
                   )}
                   <h3 className="text-lg font-semibold text-slate-900">{tier.name}</h3>
-                  <div className="mt-4 mb-2">
+                  <div className="mt-4 mb-1">
                     <span className="text-4xl font-bold text-slate-900">{tier.price}</span>
                     {tier.period && <span className="text-slate-500">{tier.period}</span>}
                   </div>
+                  <p className="text-sm font-medium text-blue-600 mb-4">+ {tier.transaction}</p>
                   <p className="text-sm text-slate-600 mb-6">{tier.description}</p>
                   <ul className="space-y-3 mb-8 flex-1">
                     {tier.features.map((f) => (
@@ -80,6 +88,15 @@ export default function PricingPage() {
               </FadeIn>
             ))}
           </div>
+
+          <FadeIn className="mt-16 text-center">
+            <div className="max-w-2xl mx-auto bg-slate-50 rounded-lg border border-slate-200 p-6">
+              <h3 className="text-base font-semibold text-slate-900 mb-2">Why Per-Loan Pricing?</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                Legacy LOS deployments cost $100K+ upfront with 3-6 month implementations. Our per-loan model means you start fast with minimal commitment, and your costs scale proportionally to your production. If you originate more, we earn more. Our incentives are aligned.
+              </p>
+            </div>
+          </FadeIn>
         </div>
       </section>
 

@@ -40,7 +40,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="text-sm font-medium text-slate-900">Location</p>
-                        <p className="text-sm text-slate-600">United States</p>
+                        <p className="text-sm text-slate-600">Fullerton, California</p>
                       </div>
                     </div>
                   </div>
