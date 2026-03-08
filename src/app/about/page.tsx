@@ -55,8 +55,8 @@ export default function AboutPage() {
             {values.map((v) => (
               <StaggerItem key={v.title}>
                 <div className="text-center p-6">
-                  <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center mx-auto mb-4">
-                    <v.icon className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 rounded-lg bg-emerald-50 flex items-center justify-center mx-auto mb-4">
+                    <v.icon className="h-6 w-6 text-emerald-600" />
                   </div>
                   <h3 className="text-base font-semibold text-slate-900 mb-2">{v.title}</h3>
                   <p className="text-sm text-slate-600 leading-relaxed">{v.description}</p>

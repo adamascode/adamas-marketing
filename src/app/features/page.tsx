@@ -37,9 +37,9 @@ export default function FeaturesPage() {
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {aiFeatures.map((f) => (
               <StaggerItem key={f.title}>
-                <div className="p-6 rounded-lg border border-slate-200 bg-white hover:border-blue-300 hover:shadow-lg transition-all duration-300 h-full">
-                  <div className="w-10 h-10 rounded-md bg-blue-50 flex items-center justify-center mb-4">
-                    <f.icon className="h-5 w-5 text-blue-600" />
+                <div className="p-6 rounded-lg border border-slate-200 bg-white hover:border-emerald-300 hover:shadow-lg transition-all duration-300 h-full">
+                  <div className="w-10 h-10 rounded-md bg-emerald-50 flex items-center justify-center mb-4">
+                    <f.icon className="h-5 w-5 text-emerald-600" />
                   </div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-2">{f.title}</h3>
                   <p className="text-sm text-slate-600 leading-relaxed">{f.description}</p>
@@ -59,9 +59,9 @@ export default function FeaturesPage() {
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {platformFeatures.map((f) => (
               <StaggerItem key={f.title}>
-                <div className="p-6 rounded-lg border border-slate-200 bg-white hover:border-blue-300 hover:shadow-lg transition-all duration-300 h-full">
-                  <div className="w-10 h-10 rounded-md bg-blue-50 flex items-center justify-center mb-4">
-                    <f.icon className="h-5 w-5 text-blue-600" />
+                <div className="p-6 rounded-lg border border-slate-200 bg-white hover:border-emerald-300 hover:shadow-lg transition-all duration-300 h-full">
+                  <div className="w-10 h-10 rounded-md bg-emerald-50 flex items-center justify-center mb-4">
+                    <f.icon className="h-5 w-5 text-emerald-600" />
                   </div>
                   <h3 className="text-base font-semibold text-slate-900 mb-2">{f.title}</h3>
                   <p className="text-sm text-slate-600 leading-relaxed">{f.description}</p>

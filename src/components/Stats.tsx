@@ -13,7 +13,7 @@ const stats = [
 
 export function Stats() {
   return (
-    <section className="relative py-24 bg-slate-950 overflow-hidden">
+    <section className="relative py-24 bg-navy-950 overflow-hidden">
       <GradientMesh />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
@@ -24,7 +24,7 @@ export function Stats() {
           {stats.map((stat) => (
             <StaggerItem key={stat.label} className="text-center">
               <div className="text-4xl md:text-5xl font-bold mb-2">
-                <AnimatedCounter target={stat.value} suffix={stat.suffix} decimals={0} className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent" />
+                <AnimatedCounter target={stat.value} suffix={stat.suffix} decimals={0} className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent" />
               </div>
               <p className="text-sm md:text-base text-slate-400">{stat.label}</p>
             </StaggerItem>

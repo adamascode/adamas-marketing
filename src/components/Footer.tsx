@@ -26,12 +26,12 @@ const columns = [
 
 export function Footer() {
   return (
-    <footer className="bg-slate-900 border-t border-slate-800">
+    <footer className="bg-navy-950 border-t border-navy-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-md bg-gradient-to-br from-blue-500 to-violet-500 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-md bg-emerald-600 flex items-center justify-center">
                 <span className="text-white font-bold text-sm">A</span>
               </div>
               <span className="text-white font-bold text-xl">Adamas LOS</span>
@@ -55,7 +55,7 @@ export function Footer() {
             </div>
           ))}
         </div>
-        <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-12 pt-8 border-t border-navy-900 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-500">&copy; {new Date().getFullYear()} Adamas LOS. All rights reserved.</p>
           <div className="flex items-center gap-4">
             {['Twitter', 'LinkedIn'].map((social) => (

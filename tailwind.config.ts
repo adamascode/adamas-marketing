@@ -4,6 +4,21 @@ const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
+      colors: {
+        navy: {
+          50: '#eef2f9',
+          100: '#d5dff0',
+          200: '#afc2e3',
+          300: '#7d9bd1',
+          400: '#4e74b8',
+          500: '#2d5399',
+          600: '#1e3f7a',
+          700: '#163063',
+          800: '#0F2B5B',
+          900: '#0a1f42',
+          950: '#06132a',
+        },
+      },
       animation: {
         'mesh-drift-1': 'meshDrift1 20s ease-in-out infinite alternate',
         'mesh-drift-2': 'meshDrift2 25s ease-in-out infinite alternate',

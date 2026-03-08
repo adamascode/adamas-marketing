@@ -13,7 +13,7 @@ interface PageHeroProps {
 
 export function PageHero({ title, subtitle, breadcrumb }: PageHeroProps) {
   return (
-    <section className="relative bg-slate-950 overflow-hidden pt-24 pb-16">
+    <section className="relative bg-navy-950 overflow-hidden pt-24 pb-16">
       <GradientMesh />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {breadcrumb && (

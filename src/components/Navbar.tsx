@@ -23,13 +23,13 @@ export function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-slate-950/90 backdrop-blur-xl border-b border-slate-800' : 'bg-transparent'
+        scrolled ? 'bg-navy-950/90 backdrop-blur-xl border-b border-navy-800' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-md bg-gradient-to-br from-blue-500 to-violet-500 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-md bg-emerald-600 flex items-center justify-center">
               <span className="text-white font-bold text-sm">A</span>
             </div>
             <span className="text-white font-bold text-xl tracking-tight">Adamas LOS</span>
@@ -46,7 +46,7 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-violet-500 rounded-md hover:from-blue-600 hover:to-violet-600 transition-all shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40"
+              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 rounded-md hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-600/25 hover:shadow-emerald-500/40"
             >
               Request Demo
             </Link>
@@ -59,15 +59,15 @@ export function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-slate-950/95 backdrop-blur-xl border-t border-slate-800">
+        <div className="md:hidden bg-navy-950/95 backdrop-blur-xl border-t border-navy-800">
           <div className="px-4 py-4 space-y-3">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href} className="block text-sm text-slate-300 hover:text-white py-2" onClick={() => setMobileOpen(false)}>
                 {link.label}
               </Link>
             ))}
-            <hr className="border-slate-800" />
-            <Link href="/contact" className="block text-center px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-violet-500 rounded-md" onClick={() => setMobileOpen(false)}>
+            <hr className="border-navy-800" />
+            <Link href="/contact" className="block text-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 rounded-md" onClick={() => setMobileOpen(false)}>
               Request Demo
             </Link>
           </div>
