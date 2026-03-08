@@ -26,8 +26,11 @@ export default function HomePage() {
     <>
       <Hero />
 
+      {/* Gradient transition from dark hero to light content */}
+      <div className="h-24 bg-gradient-to-b from-navy-950 to-slate-100" />
+
       {/* The Problem */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">The Industry Is Stuck</h2>

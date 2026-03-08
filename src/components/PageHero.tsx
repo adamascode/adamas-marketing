@@ -30,6 +30,7 @@ export function PageHero({ title, subtitle, breadcrumb }: PageHeroProps) {
           {subtitle && <p className="text-lg text-slate-300 max-w-2xl mx-auto">{subtitle}</p>}
         </FadeIn>
       </div>
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-b from-transparent to-slate-100" />
     </section>
   )
 }

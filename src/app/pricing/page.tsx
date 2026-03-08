@@ -44,7 +44,7 @@ export default function PricingPage() {
     <>
       <PageHero title="Pricing That Aligns With Your Production" subtitle="Low base fee plus a per-loan transaction fee. You grow, we grow." breadcrumb={{ label: 'Pricing', href: '/pricing' }} />
 
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn className="text-center mb-12">
             <p className="text-slate-600 max-w-2xl mx-auto">Mortgage lenders think in loans, not seats. Our pricing keeps the base low to ease adoption and scales with your volume. No $100K+ deployments. No 6-month implementations.</p>
@@ -53,7 +53,7 @@ export default function PricingPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {tiers.map((tier) => (
               <FadeIn key={tier.name}>
-                <div className={`relative rounded-lg border p-8 h-full flex flex-col ${tier.featured ? 'border-teal-500 ring-1 ring-teal-500 shadow-lg shadow-teal-500/10' : 'border-slate-200'}`}>
+                <div className={`relative rounded-lg border bg-white p-8 h-full flex flex-col ${tier.featured ? 'border-teal-500 ring-1 ring-teal-500 shadow-lg shadow-teal-500/10' : 'border-slate-200'}`}>
                   {tier.featured && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-teal-600 rounded-full text-xs font-medium text-white">
                       Most Popular

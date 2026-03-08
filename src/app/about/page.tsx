@@ -21,7 +21,7 @@ export default function AboutPage() {
     <>
       <PageHero title="About Adamas LOS" subtitle="Building the modern replacement for legacy mortgage technology." breadcrumb={{ label: 'About', href: '/about' }} />
 
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-slate-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 text-center">Why This Exists</h2>
