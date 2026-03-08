@@ -13,7 +13,7 @@ interface PageHeroProps {
 
 export function PageHero({ title, subtitle, breadcrumb }: PageHeroProps) {
   return (
-    <section className="relative bg-navy-950 overflow-hidden pt-24 pb-16">
+    <section className="relative bg-navy-950 overflow-hidden pt-24 pb-32">
       <GradientMesh />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {breadcrumb && (
@@ -30,7 +30,7 @@ export function PageHero({ title, subtitle, breadcrumb }: PageHeroProps) {
           {subtitle && <p className="text-lg text-slate-300 max-w-2xl mx-auto">{subtitle}</p>}
         </FadeIn>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-b from-transparent to-slate-100" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-slate-50" />
     </section>
   )
 }
