@@ -29,7 +29,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-md bg-emerald-600 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-md bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center">
               <span className="text-white font-bold text-sm">A</span>
             </div>
             <span className="text-white font-bold text-xl tracking-tight">Adamas LOS</span>
@@ -46,7 +46,7 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 rounded-md hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-600/25 hover:shadow-emerald-500/40"
+              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-teal-600 rounded-md hover:bg-teal-500 transition-all shadow-lg shadow-teal-600/20 hover:shadow-teal-500/30"
             >
               Request Demo
             </Link>
@@ -67,7 +67,7 @@ export function Navbar() {
               </Link>
             ))}
             <hr className="border-navy-800" />
-            <Link href="/contact" className="block text-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 rounded-md" onClick={() => setMobileOpen(false)}>
+            <Link href="/contact" className="block text-center px-4 py-2 text-sm font-medium text-white bg-teal-600 rounded-md" onClick={() => setMobileOpen(false)}>
               Request Demo
             </Link>
           </div>

@@ -31,7 +31,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-md bg-emerald-600 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-md bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center">
                 <span className="text-white font-bold text-sm">A</span>
               </div>
               <span className="text-white font-bold text-xl">Adamas LOS</span>

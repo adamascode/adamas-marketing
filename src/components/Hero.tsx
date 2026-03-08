@@ -10,7 +10,7 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center bg-navy-950 overflow-hidden">
       <GradientMesh />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 pb-16">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 text-sm mb-8">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-teal-400/30 bg-teal-500/10 text-teal-300 text-sm mb-8">
           <Sparkles className="h-4 w-4" />
           AI-Native from Day One
         </motion.div>
@@ -18,7 +18,7 @@ export function Hero() {
         <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
           <span className="text-white">Replace Your</span>
           <br />
-          <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">Legacy LOS</span>
+          <span className="bg-gradient-to-r from-teal-300 via-cyan-300 to-teal-400 bg-clip-text text-transparent">Legacy LOS</span>
         </motion.h1>
 
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -26,7 +26,7 @@ export function Hero() {
         </motion.p>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href="/contact" className="inline-flex items-center px-8 py-3 text-base font-medium text-white bg-emerald-600 rounded-md hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-600/25 hover:shadow-emerald-500/40">
+          <Link href="/contact" className="inline-flex items-center px-8 py-3 text-base font-medium text-white bg-teal-600 rounded-md hover:bg-teal-500 transition-all shadow-lg shadow-teal-600/25 hover:shadow-teal-500/40">
             Request a Demo
           </Link>
           <Link href="/features" className="inline-flex items-center px-8 py-3 text-base font-medium text-white border border-slate-600 rounded-md hover:border-slate-400 hover:bg-white/5 transition-all">
@@ -36,7 +36,7 @@ export function Hero() {
 
         <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }} className="mt-16 relative">
           <div className="relative mx-auto max-w-4xl">
-            <div className="absolute -inset-4 bg-gradient-to-r from-navy-700/30 to-emerald-600/20 rounded-xl blur-2xl" />
+            <div className="absolute -inset-4 bg-gradient-to-r from-navy-700/30 to-teal-600/15 rounded-xl blur-2xl" />
             <div className="relative bg-navy-900 border border-navy-700/50 rounded-xl overflow-hidden shadow-2xl">
               <div className="flex items-center gap-2 px-4 py-3 bg-navy-800/50 border-b border-navy-700/50">
                 <div className="flex gap-1.5">

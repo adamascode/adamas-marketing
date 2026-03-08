@@ -24,7 +24,7 @@ export function Stats() {
           {stats.map((stat) => (
             <StaggerItem key={stat.label} className="text-center">
               <div className="text-4xl md:text-5xl font-bold mb-2">
-                <AnimatedCounter target={stat.value} suffix={stat.suffix} decimals={0} className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent" />
+                <AnimatedCounter target={stat.value} suffix={stat.suffix} decimals={0} className="bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text text-transparent" />
               </div>
               <p className="text-sm md:text-base text-slate-400">{stat.label}</p>
             </StaggerItem>

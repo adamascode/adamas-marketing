@@ -61,9 +61,9 @@ export default function HomePage() {
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {highlights.map((item) => (
               <StaggerItem key={item.title}>
-                <div className="group p-6 rounded-lg border border-slate-200 bg-white hover:border-emerald-300 hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 hover:-translate-y-1 h-full">
-                  <div className="w-10 h-10 rounded-md bg-emerald-50 flex items-center justify-center mb-4">
-                    <item.icon className="h-5 w-5 text-emerald-600" />
+                <div className="group p-6 rounded-lg border border-slate-200 bg-white hover:border-teal-300 hover:shadow-lg hover:shadow-teal-500/5 transition-all duration-300 hover:-translate-y-1 h-full">
+                  <div className="w-10 h-10 rounded-md bg-navy-50 flex items-center justify-center mb-4">
+                    <item.icon className="h-5 w-5 text-teal-600" />
                   </div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-2">{item.title}</h3>
                   <p className="text-sm text-slate-600 leading-relaxed">{item.description}</p>
@@ -73,7 +73,7 @@ export default function HomePage() {
           </StaggerContainer>
 
           <FadeIn className="text-center mt-10">
-            <Link href="/features" className="inline-flex items-center gap-2 text-sm font-medium text-emerald-600 hover:text-emerald-700 transition-colors">
+            <Link href="/features" className="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700 transition-colors">
               Explore All Features <ArrowRight className="h-4 w-4" />
             </Link>
           </FadeIn>
