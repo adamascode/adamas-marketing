@@ -11,7 +11,7 @@ const tiers = [
     name: 'Starter',
     price: '$25',
     period: '/user/month',
-    transaction: '$75/loan originated',
+    transaction: '$150/loan originated',
     description: 'For small lenders getting started with modern LOS.',
     features: ['AI document processing', 'Pipeline management', 'Borrower portal', 'Basic compliance engine', 'Email support'],
     cta: 'Get Started',
@@ -19,9 +19,9 @@ const tiers = [
   },
   {
     name: 'Professional',
-    price: '$50',
+    price: '$35',
     period: '/user/month',
-    transaction: '$150/loan originated',
+    transaction: '$300/loan originated',
     description: 'For growing lenders who need full automation.',
     features: ['Everything in Starter', 'AI Copilot assistant', 'Automated underwriting', 'Broker portal', 'Full compliance suite (TRID/HMDA)', 'No-code workflow builder', 'Custom fields & page builder', 'API access', 'Priority support'],
     cta: 'Request Demo',
@@ -42,12 +42,12 @@ const tiers = [
 export default function PricingPage() {
   return (
     <>
-      <PageHero title="Pricing That Aligns With Your Production" subtitle="Low base fee plus a per-loan transaction fee. You grow, we grow." breadcrumb={{ label: 'Pricing', href: '/pricing' }} />
+      <PageHero title="Pay Per Loan, Not Per Seat" subtitle="A low $25–50/user/month base fee plus a $100–300 per-loan transaction fee. Predictable costs that scale with your production volume." breadcrumb={{ label: 'Pricing', href: '/pricing' }} />
 
       <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn className="text-center mb-12">
-            <p className="text-slate-600 max-w-2xl mx-auto">Mortgage lenders think in loans, not seats. Our pricing keeps the base low to ease adoption and scales with your volume. No $100K+ deployments. No 6-month implementations.</p>
+            <p className="text-slate-600 max-w-2xl mx-auto">Mortgage lenders think in loans, not seats. A low base platform fee eases initial adoption, while the per-loan transaction fee aligns our incentives directly with your production volume — you grow, we grow. Plus usage-based AI processing fees and a margin on premium integrations like credit pulls and AUS submissions.</p>
           </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -93,7 +93,7 @@ export default function PricingPage() {
             <div className="max-w-2xl mx-auto bg-slate-50 rounded-lg border border-slate-200 p-6">
               <h3 className="text-base font-semibold text-slate-900 mb-2">Why Per-Loan Pricing?</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Legacy LOS deployments cost $100K+ upfront with 3-6 month implementations. Our per-loan model means you start fast with minimal commitment, and your costs scale proportionally to your production. If you originate more, we earn more. Our incentives are aligned.
+                Legacy LOS deployments cost $100K+ upfront with 3–6 month implementations. Our per-loan transaction model means you start fast with a low base fee and minimal commitment. Higher-tier plans unlock lower per-loan rates, giving you upside as volume grows. AI processing and premium integrations are billed on usage, so you only pay for what you use.
               </p>
             </div>
           </FadeIn>
